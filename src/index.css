@@ -1,0 +1,211 @@
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsiv container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+/* Card style */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.card-title, .card-text {
+  margin: 10px 0;
+}
+
+/* Currency table */
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Pie chart */
+.pie-chart {
+  margin-top: 30px;
+}
+
+/* Line chart */
+.line-chart {
+  margin-top: 30px;
+}
+
+/* Transaction List */
+.list-group-item {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item:hover {
+  background-color: #f8f8f8;
+}
+
+
+
+form {
+  margin: 20px 0;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  margin-bottom: 10px;
+  flex: 1 1 calc(20% - 10px);
+}
+
+.btnAdd {
+  width: 100%;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    font-size: 0.875rem;
+  }
+
+  .pie-chart, .line-chart {
+    width: 100%;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    flex: 1 1 48%;
+  }
+
+  .table {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .card {
+    flex: 1 1 32%;
+  }
+  
+  .table {
+    font-size: 1.125rem;
+  }
+
+  .container {
+    padding: 40px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .col {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-control {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 476px) {
+  form .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form .row .col {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  form .row .col button {
+    margin-top: 10px; 
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%; 
+  }
+}
+
+
+@media (min-width: 477px) {
+  .buttons-container {
+    display: flex;
+    justify-content: flex-start; 
+  }
+}
